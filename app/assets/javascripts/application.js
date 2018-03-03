@@ -19,7 +19,7 @@
 
 $(function () {
   $("#upcase-button").on("click", function(){
-    const text = $("#text").val().toUpperCase();
+    var text = $("#text").val().toUpperCase();
     if ( text.length > 0 ){
       $("#text").val(text);
     }
@@ -30,7 +30,7 @@ $(function () {
   });
 
   $("#copy-button").on("click", function () {
-    const copyText = document.getElementById("text");
+    var copyText = document.getElementById("text");
     copyText.select();
     document.execCommand("Copy");
   });
