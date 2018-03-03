@@ -11,5 +11,5 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
-Rails.application.config.assets.precompile += %w( bootstrap.min.css font-awesome.min landing-page simple-line-icons)
+Rails.application.config.assets.precompile += %w( font-awesome.min.scss landing-page.scss simple-line-icons.scss)
 Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/

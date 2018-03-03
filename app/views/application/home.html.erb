@@ -7,17 +7,19 @@
         <h1 class="mb-5 with-shadow">We want to change the world in capital letters!</h1>
       </div>
      <div class="col-xl-9 mx-auto">
-        <form>
-          <div class="form-row">
-              <%= text_area_tag :text, nil, rows: 7, cols: 200, placeholder: "Enter your text here...",
-               id: "text", class: "form-control form-control-lg" %>
-          </div>
-          <div class="form-row">
-           <div class="col-12 col-md-3">
-              <!-- Button here -->
-            </div>
-          </div>
-        </form>
+      <div class="form-row">
+          <%= text_area_tag :text, nil, rows: 7, cols: 200, placeholder: "Enter your text here...",
+            id: "text", class: "form-control form-control-lg" %>
+      </div>
+      <div class="form-row float-left mt-3">
+        <button type="submit" id="clear-button" class="btn btn-block btn-lg btn-primary">CLEAR</button>
+      </div>
+      <div class="form-row float-left ml-3 mt-3">
+        <button type="submit" id="copy-button" class="btn btn-block btn-lg btn-primary">COPY</button>
+      </div>
+      <div class="form-row float-right mt-3">
+        <button type="submit" id="upcase-button" class="btn btn-block btn-lg btn-primary">UPCASE</button>
+      </div>
       </div>
     </div>
   </div>

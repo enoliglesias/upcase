@@ -13,3 +13,26 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
+
+$(function () {
+  $("#upcase-button").on("click", function(){
+    const text = $("#text").val().toUpperCase();
+    if ( text.length > 0 ){
+      $("#text").val(text);
+    }
+  });
+
+  $("#clear-button").on("click", function () {
+    $("#text").val("");
+  });
+
+  $("#copy-button").on("click", function () {
+    const copyText = document.getElementById("text");
+    copyText.select();
+    document.execCommand("Copy");
+  });
+
+});
